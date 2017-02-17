@@ -1,0 +1,41 @@
+{
+  "coord":{
+    "lon":28.48,
+    "lat":49.23
+  },
+  "weather":[
+    {
+      "id":803,
+      "main":"Clouds",
+      "description":"broken clouds",
+      "icon":"04d"
+    }
+  ],
+  "base":"stations",
+  "main":{
+    "temp":268.722,
+    "pressure":1002.58,
+    "humidity":91,
+    "temp_min":268.722,
+    "temp_max":268.722,
+    "sea_level":1038.93,
+    "grnd_level":1002.58
+  },
+  "wind":{
+    "speed":8.95,
+    "deg":310.501
+  },
+  "clouds":{
+    "all":64
+  },
+  "dt":1487074717,
+  "sys":{
+    "message":0.0081,
+    "country":"UA",
+    "sunrise":1487049348,
+    "sunset":1487085922
+  },
+  "id":689558,
+  "name":"Vinnytsya",
+  "cod":200
+}

@@ -1,0 +1,6 @@
+login_data.md
+*.key
+*.crt
+*.pem
+
+.idea/*

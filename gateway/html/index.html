@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="script.js"></script>
+    <body>
+        <div class="container-fluid">
+            <br><br><br>
+            <div class="col-md-3"></div>
+            <div class="panel panel-default col-md-6"  ng-app="myApp" ng-controller="myCtrl">
+                <div class="page-header">
+                    <h1>Cloud thermometer</h1>
+                </div>
+                <i>
+                Are you so f***n lazy to get up and check thermometer near the window?<br>
+                Do you think it's Ok to waste bunch of cloud computing for silly stuff?<br>
+                This product is for you!<br><br><br>
+                </i>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h4>Checkout recent temperature</h4></div>
+                    <div class="panel-body">
+                        InternalTemp: {{recentStatus.InternalTemp}} °C<br>
+                        ExternalTemp: {{recentStatus.ExternalTemp}} °C<br>
+                        LightStatus: {{recentStatus.LightStatus ? "ON" : "OFF"}}
+                        <button class="btn btn-primary" ng-click="turnLight(true)">Light ON</button>
+                        <button class="btn btn-primary" ng-click="turnLight(false)">Light OFF</button> <br>
+
+                        Update interval:
+                        <div class="input-group col-md-5">
+                            <input class="form-control" type="text" ng-model="updateInterval"/>
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" ng-click="setUpdateInterval()">Set new update interval</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,5 +1,16 @@
 #AWS IoT @ Go
 
+####Project uses next stack of technologies:
+- Golang
+- LUA
+- JS
+- AWS IoT
+- DynamoDB
+- MQTT
+- Mosquitto
+- NodeMCU
+- Angular
+
 ####TODO:
 - ~~setup AWS IoT (things, certificates & policies)~~
 - ~~implement & test AWS IoT MQTT interaction source~~
@@ -10,17 +21,6 @@
 - ~~implement UI (hosted on gateway side, simple Angular app)~~
 - implement unit tests for Go functionality
 - add DynamoDB support for logging data
-
-####AWS IoT settings:
-    arn:aws:iot:eu-central-1:648323319497:thing/ForecastThing
-    a1x6d6ym1e2e7r.iot.eu-central-1.amazonaws.com
-    
-    arn:aws:iot:eu-central-1:648323319497:thing/ThermometerThing
-
-####Weather forecast settings:
-    https://home.openweathermap.org/api_keys
-    78ac22a76a45e175dbb87e0fb0b38bd6
-    http://api.openweathermap.org/data/2.5/weather?appid=78ac22a76a45e175dbb87e0fb0b38bd6&units=metric&q=Vinnitsya,ua
     
 ####MQTT topics:
 - sensors/temp/external
